@@ -20,7 +20,7 @@ Cividev requires recent versions of both Vagrant (1.7+) and VirtualBox (4.3+) to
 
 #### Cividev as a MAMP/XAMPP Replacement
 
-Once Vagrant and VirtualBox are installed, download or clone cividev and type `vagrant up` to automatically build a virtualized Ubuntu server on your computer containing everything needed to test or develop with any combination of CMS and CiviCRM versions. See our section on [The First Vagrant Up](#the-first-vagrant-up) for detailed instructions.
+Once Vagrant and VirtualBox are installed, download or clone cividev and type `vagrant up` (in the cividev directory) to automatically build a virtualized Ubuntu server on your computer containing everything needed to test or develop with any combination of CMS and CiviCRM versions. See our section on [The First Vagrant Up](#the-first-vagrant-up) for detailed instructions.
 
 Multiple projects can be developed at once in the same environment. Cividev is pre-configured with the following CiviCRM configurations:
 
@@ -30,7 +30,7 @@ Multiple projects can be developed at once in the same environment. Cividev is p
 * __d8-master__ with Drupal 8
 * __b-master__ with Backdrop
 
-Cividesk's `config`, `database`, `log` and `www` directories are shared with the virtualized server.
+cividev's `config`, `database`, `log` and `www` directories are shared with the virtualized server.
 
 These shared directories allow you to work, for example, in `cividev/www/d7-master` in your local file system and have those changes immediately reflected in the virtualized server's file system and http://d7-master.dev/. Likewise, if you `vagrant ssh` and make modifications to the files in `/srv/www/`, you'll immediately see those changes in your local file system.
 
